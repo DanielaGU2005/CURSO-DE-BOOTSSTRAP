@@ -1,0 +1,324 @@
+/*barra de navegacion*/
+.navbar {
+	padding: 2px;
+	background-color: #f5f6f7;
+}
+.navbar-collapse {
+	align-items: center;
+	justify-content: space-between;
+}
+/*estilos generales*/
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+h1 {
+	font-size: 2.5rem;
+	font-family: 'Rubik Dirt', cursive;
+}
+.seccion-oscura {
+	color: white;
+	background-color: #1b1b32;
+}
+.seccion-clara {
+	color: #1b1b32;
+	background-color: white;
+}
+.seccion-titulo {
+	font-size: 2rem;
+	padding: 15px 0;
+	font-family: 'Rubik Dirt', cursive;
+}
+.seccion-texto {
+	font-size: 1.2rem;
+}
+.seccion-descripcion {
+	font-size: 1.2rem;
+	color: #584e4e;
+}
+.button-info {
+	font-size: 1.1rem;
+	margin: 20px;
+	background-color: aquamarine;
+}
+.texto-negro {
+	color: #1b1b32;
+}
+.texto-blanco {
+	color: azure;
+}
+
+/* seccion hero*/
+.hero {
+	background-color: #f5f6f7;
+	min-height: 450px;
+	text-align: center;
+}
+.hero-principal {
+	padding: 3rem;
+}
+.hero-img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 20px;
+}
+.hero-principal h2 {
+	font-size: 1.5rem;
+	font-family: 'Fraunces', serif;
+}
+/* seccion sobre mi*/
+.sobre-mi {
+	height: 500px;
+	padding: 10px;
+}
+.sobre-mi .contenedor {
+	max-width: 600px;
+	text-align: center;
+}
+/* experiencia*/
+.experiencia {
+	padding: 40px 40px 60px 40px;
+	text-align: center;
+}
+.experiencia .row div {
+	height: 320px;
+}
+.experiencia .column {
+	padding: 20px;
+	border: 2px solid #8080804d;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	transition: all 0.2s ease-in;
+}
+
+.experiencia .column:hover {
+	background-color: #1b1b32;
+	color: #f5f6f7;
+}
+.experiencia i {
+	font-size: 2.5rem;
+	color: #7ade30;
+}
+.experiencia-titulo {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.column p {
+	font-size: 15px;
+	margin: 10px 0;
+}
+.badges-contenedor {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.badges {
+	margin: 5px;
+}
+/* proyectos */
+.proyectos-recientes {
+	padding: 40px;
+}
+.proyectos-recientes img {
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	border-radius: 50px;
+	display: block;
+	transition: all 0.2s ease;
+}
+.proyectos-contenedor {
+	padding-top: 60px;
+	margin-bottom: 40px;
+}
+.overlay {
+	transition: all 0.25s ease;
+	opacity: 0;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	right: 20%;
+	transform: translate(-50, -50);
+	text-align: center;
+}
+.overlay p {
+	font-size: 10px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.proyecto {
+	position: relative;
+}
+.proyecto:hover img {
+	opacity: 0.2;
+}
+.proyecto:hover .overlay {
+	opacity: 1;
+}
+
+.overlay i {
+	color: black;
+	font-size: 60px;
+	margin: 15px;
+}
+/* Articulos*/
+
+.articulos {
+	min-height: 500px;
+	padding: 30px;
+}
+.articulos .card {
+	width: 80%;
+	max-width: 600px;
+	margin: 20px;
+}
+.card-header {
+	font-weight: bold;
+}
+/* Testimonios carrusel*/
+.testimonios {
+	padding: 40px 40px 80px 40px;
+}
+.testiminios .carousel {
+	max-width: 800px;
+}
+.carousel-item {
+	height: 500px;
+}
+.carousel-item .container {
+	width: 100%;
+	height: 100%;
+}
+.testiminios-img {
+	height: 150px;
+	width: 150px;
+	margin-left: 550px;
+}
+.testimonio-texto {
+	max-width: 100%;
+	font-size: 15px;
+	text-align: center;
+	font-family: 'Share Tech Mono', monospace;
+}
+.testimonio-info {
+	font-weight: bold;
+	max-width: 100%;
+	font-size: 20px;
+	text-align: center;
+}
+.testimonio-info {
+	margin-bottom: 0%;
+}
+.testimonio-footer .cliente {
+	font-size: 1.2rem;
+}
+.testimonio-info .cargo {
+	font-size: 0.9rem;
+	color: #584e4e;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	background-color: black;
+}
+.carousel-control-next-icon {
+	margin-left: 100px;
+}
+.carousel-control-prev-icon {
+	margin-right: 100px;
+}
+/* contacto*/
+.contacto .container {
+	max-width: 1100px;
+	min-height: 200px;
+	padding: 20px;
+}
+.contacto .rectangulo {
+	margin-top: -5rem;
+	background-color: aqua;
+	border-radius: 10px;
+	box-shadow: 0px 1px 4px 1x white;
+}
+.contacto .row {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.contacto .descripcion {
+	color: white;
+	font-size: 1.2rem;
+}
+.contacto button {
+	color: white;
+	font-weight: bold;
+	background-color: transparent;
+	border: 2px solid white;
+	padding: 1.25rem 2rem;
+	margin: 10px;
+	border-radius: 100px;
+	transition: all 0.2s ease-in-out;
+}
+.contacto button i {
+	color: white;
+	font-size: 1.3rem;
+	transition: all 0.2s ease-in-out;
+}
+
+/* adaptable(responsivo)*/
+
+@media screen and (max-width: 400px) {
+	.overlay p {
+		font-size: 18px;
+	}
+	.overlay i {
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.navbar-brand {
+		display: none;
+	}
+}
+@media screen and(min-width:700px) {
+	.hero-inferior-img {
+		max-width: 500px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.testimonios-img {
+		height: 120px;
+		width: 120px;
+		margin-left: 90px;
+	}
+	.testimonio-texto {
+		font-size: 10px;
+	}
+	.testimonio-info {
+		font-size: 11px;
+	}
+	.carousel-control-next-icon,
+	.carousel-control-prev-icon {
+		background-color: black;
+		font-size: 5px;
+	}
+	.carousel-control-next-icon {
+		margin-left: 10px;
+	}
+	.carousel-control-prev-icon {
+		margin-right: 10px;
+	}
+	.carousel-inner {
+		width: 300px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.seccion-titulo {
+		font-size: 2rem;
+		padding: 20px 0;
+		font-family: 'Rubik Dirt', cursive;
+	}
+}
